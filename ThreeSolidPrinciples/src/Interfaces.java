@@ -22,19 +22,13 @@ need to eat.
 
  */
 
-
-
 package threesolid;
-
-
 
 interface IWorkable {
 
     void work();
 
 }
-
-
 
 interface IFeedable {
 

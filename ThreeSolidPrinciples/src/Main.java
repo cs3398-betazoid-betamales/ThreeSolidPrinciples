@@ -11,19 +11,13 @@
 
 */
 
-
-
 package threesolid;
 
+import java.awt.*; // Using AWT container and component classes
 
-
-import java.awt.*;        // Using AWT container and component classes
-
-import java.awt.event.*;  // Using AWT event classes and listener interfaces
+import java.awt.event.*; // Using AWT event classes and listener interfaces
 
 import java.io.*;
-
-
 
 import threesolid.Manager;
 
@@ -31,68 +25,52 @@ import threesolid.Worker;
 
 import threesolid.SuperWorker;
 
-
-
-
-
 class ThreeSolidMain
 
-{   
+{
 
+	public static Manager tsManager = new Manager();
 
+	// The entry main() method
 
-   public static Manager tsManager = new Manager();
+	public static void main(String[] args)
 
+	{
 
+		try
 
-   // The entry main() method
+		{
 
-   public static void main(String[] args) 
+			System.out.format("Starting ... \n");
 
-   {
+		}
 
+		catch (Exception main_except)
 
+		{
 
-      try 
+			main_except.printStackTrace();
 
-      {
+		}
 
-         System.out.format("Starting ... \n");               
+		try
 
-      } 
+		{
 
-      catch (Exception main_except)
+			System.out.format("Stopping ... \n");
 
-      {
+		}
 
-         main_except.printStackTrace();
+		catch (Exception main_except)
 
-      }
+		{
 
+			main_except.printStackTrace();
 
+		}
 
-            try 
+		System.exit(0);
 
-      {
+	}
 
-         System.out.format("Stopping ... \n");               
-
-      } 
-
-      catch (Exception main_except)
-
-      {
-
-         main_except.printStackTrace();
-
-      }
-
-
-
-      System.exit(0);
-
-
-
-   }
-
- }
+}

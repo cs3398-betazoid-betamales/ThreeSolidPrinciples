@@ -28,21 +28,13 @@ INTERFACE SEGREGATION...Although this file makes use of interfaces, it does not 
 
 */
 
-
-
 package threesolid;
-
-
 
 class Manager {
 
 	private IWorkable worker;
 
-
-
 	public void Manager() {
-
-
 
 	}
 
@@ -51,8 +43,6 @@ class Manager {
 		worker = w;
 
 	}
-
-
 
 	public void manage() {
 

@@ -23,12 +23,10 @@ required to implement the unnecessary "eat" method.
 
 package threesolid;
 
-class Robot implements IWorkable{
+class Robot extends BaseWorker implements IReboot {
+	public void reboot() {
+		System.out.format("TEST\n");
+		// .... rebooting
+	}
 
-    public void work(){
-    
-        // ....working
-        
-    }
 }
-

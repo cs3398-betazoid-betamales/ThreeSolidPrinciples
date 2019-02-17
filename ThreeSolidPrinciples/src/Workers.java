@@ -40,50 +40,64 @@
 
 */
 
-
-
 package threesolid;
 
+class Worker extends BaseWorker implements IEat, ISick {
 
-
-
-
-class Worker implements IWorkable, IFeedable{
-
-	public void work() {
-
-		// ....working
+	public void eat() {
+		System.out.format("TEST\n");
+		// .... eating
 
 	}
 
-
-
-	public void eat() {
-
-		//.... eating in launch break
+	public void sick() {
+		System.out.format("TEST\n");
+		// .... barfing
 
 	}
 
 }
 
-
-
-
-
-class SuperWorker implements IWorkable, IFeedable{
+class SuperWorker extends BaseWorker implements IEat, ISick {
 
 	public void work() {
-
-		//.... working much more
+		System.out.format("TEST\n");
+		// .... working much more
+		// Overrides the inherited work() method
 
 	}
-
-
 
 	public void eat() {
-
-		//.... eating in launch break
+		System.out.format("TEST\n");
+		// .... eating
 
 	}
 
+	public void sick() {
+		System.out.format("TEST\n");
+		// .... barfing
+
+	}
+
+}
+
+class TempWorker extends BaseWorker implements IEat, ISick {
+
+	public void work() {
+		System.out.format("TEST\n");
+		// .... working much more
+		// Overrides the inherited work() method
+
+	}
+
+	public void eat() {
+		System.out.format("TEST\n");
+		// .... eating
+
+	}
+
+	public void sick() {
+		System.out.format("TEST\n");
+		// .... barfing
+	}
 }
