@@ -44,7 +44,7 @@ package threesolid;
 
 abstract class BaseWorker {
 	void work() {
-		System.out.println("I likuh do da chacha");
+		System.out.format("I likuh do da chacha\n");
 	}
 }
 
