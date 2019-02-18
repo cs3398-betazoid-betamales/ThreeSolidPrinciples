@@ -42,7 +42,7 @@
 
 package threesolid;
 
-abstract class BaseWorker {
+class BaseWorker {
 	void work() {
 		System.out.format("I likuh do da chacha\n");
 	}
