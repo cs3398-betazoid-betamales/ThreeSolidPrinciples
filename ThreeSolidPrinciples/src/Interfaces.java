@@ -35,3 +35,21 @@ interface IFeedable {
     void eat();
 
 }
+
+interface IEat {
+
+    void eat();
+	
+}
+
+interface ISick {
+
+    void sick();
+	
+}
+
+interface IReboot {
+
+    void reboot();
+	
+}
