@@ -49,5 +49,18 @@ class Manager {
 		worker.work();
 
 	}
+}
 
+class ProjectManager extends Manager{
+
+	public void schedulework() {
+		System.out.format("It matters not how strait the gate,\nHow charged with punishments the scroll,\n");
+	}
+}
+
+class ProductManager extends Manager{
+	
+	public void defineproduct() {
+		System.out.format("I am the master of my fate,\nI am the captain of my soul.\n");
+	}
 }
