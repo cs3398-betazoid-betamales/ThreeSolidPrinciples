@@ -42,6 +42,12 @@
 
 package threesolid;
 
+abstract class BaseWorker {
+	void work() {
+		System.out.println("I likuh do da chacha");
+	}
+}
+
 class Worker extends BaseWorker implements IEat, ISick {
 
 	public void eat() {
