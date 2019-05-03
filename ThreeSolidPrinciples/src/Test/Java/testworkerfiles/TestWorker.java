@@ -19,20 +19,4 @@ public class TestWorker {
 	System.setOut(old);
  	assertEquals(baos.toString(),"I likuh do da chacha\n","Mismatch between test text and method text");
  }
-
- @Test
- @DisplayName("newtestRMWorkerPass()")
- public void newtestRMWorkerPass()
- {
- 	Worker a = null;
- 	assertNull(a);
- }
-
- @Test
- @DisplayName("newtestRMWorkerFail()")
- public void newtestRMWorkerFail()
- {
- 	Manager m = new Manager();
- 	assertSame(m, w);
- }
 }
