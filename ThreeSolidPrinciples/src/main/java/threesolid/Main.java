@@ -12,6 +12,7 @@
 */
 
 package threesolid;
+import org.joda.time.LocalTime;
 
 import java.awt.*; // Using AWT container and component classes
 
@@ -28,7 +29,6 @@ import threesolid.SuperWorker;
 class ThreeSolidMain
 
 {
-
 	public static Manager tsManager = new Manager();
 	public static BaseWorker baseWorker = new BaseWorker();
 	public static Worker worker = new Worker();
@@ -38,11 +38,14 @@ class ThreeSolidMain
 	public static ProjectManager projectManager = new ProjectManager();
 	public static ProductManager productManager = new ProductManager();
 
+
 	// The entry main() method
 
 	public static void main(String[] args)
 
+
 	{
+
 
 		try
 
