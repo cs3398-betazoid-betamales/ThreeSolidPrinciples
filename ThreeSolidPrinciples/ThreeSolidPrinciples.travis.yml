@@ -1,0 +1,31 @@
+dist: xenial
+
+language: java
+script: 
+  - gradle clean build
+  - tar -zcf TSP_test_reports.tar.gz build/reports
+  - tar -zcf TSP_executable_distributions.tar.gz build/distributions
+  - ls -R
+
+before_deploy:
+  - git config --global user.email "builds@travis-ci.com"
+  - git config --global user.name "Travis CI"
+  - export GIT_TAG=$TRAVIS_BRANCH.$TRAVIS_BUILD_NUMBER
+  - echo "Just generated GIT_TAG"
+  - echo $GIT_TAG
+  - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
+  - git push -q https://$GITPERM@github.com/drlehr/ThreeSolidPrinciples  --tags
+  - ls -R
+  
+deploy:
+  provider: releases
+  api_key:
+    secure: $GITPERM
+  file: 
+    - README.md
+    - TSP_test_reports.tar.gz 
+    - TSP_executable_distributions.tar.gz 
+  skip_cleanup: true
+  on:
+    tags: false
+  

@@ -53,7 +53,6 @@ class Worker extends BaseWorker implements IEat, ISick {
 	public void eat() {
 		System.out.format("TEST\n");
 		// .... eating
-
 	}
 
 	public void sick() {
