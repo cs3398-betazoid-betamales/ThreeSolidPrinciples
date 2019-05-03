@@ -107,3 +107,4 @@ class TempWorker extends BaseWorker implements IEat, ISick {
 		// .... barfing
 	}
 }
+

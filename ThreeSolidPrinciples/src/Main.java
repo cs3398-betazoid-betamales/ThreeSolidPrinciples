@@ -30,6 +30,7 @@ class ThreeSolidMain
 {
 
 	public static Manager tsManager = new Manager();
+	/*
 	public static BaseWorker baseWorker = new BaseWorker();
 	public static Worker worker = new Worker();
 	public static SuperWorker superWorker = new SuperWorker();
@@ -37,7 +38,7 @@ class ThreeSolidMain
 	public static Robot robot = new Robot();
 	public static ProjectManager projectManager = new ProjectManager();
 	public static ProductManager productManager = new ProductManager();
-
+*/
 	// The entry main() method
 
 	public static void main(String[] args)
@@ -75,7 +76,7 @@ class ThreeSolidMain
 			main_except.printStackTrace();
 
 		}
-
+/*
 		baseWorker.work();
 		worker.eat();
 		worker.sick();
@@ -88,7 +89,7 @@ class ThreeSolidMain
 		projectManager.schedulework();
 		productManager.defineproduct();
 		robot.reboot();
-
+*/
 		System.exit(0);
 
 	}
