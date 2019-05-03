@@ -66,7 +66,7 @@ set CMD_LINE_ARGS=%*
 set CLASSPATH=%APP_HOME%\lib\dl-three-solid-main-0.1.0.jar;%APP_HOME%\lib\joda-time-2.2.jar
 
 @rem Execute ThreeSolidMain
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %THREE_SOLID_MAIN_OPTS%  -classpath "%CLASSPATH%" threesolid.ThreeSolidMain %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %THREE_SOLID_MAIN_OPTS%  -classpath "%CLASSPATH%" threesolid.Main %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

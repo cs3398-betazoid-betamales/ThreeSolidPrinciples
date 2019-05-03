@@ -9,7 +9,7 @@ apply plugin: 'application'
 //      Change this assignment to reflect your own project 
 //      mainClassName = 'package.mainClassName'
 //
-mainClassName = 'threesolid.ThreeSolidMain'
+mainClassName = 'threesolid.Main'
 //
 /////////////////////////////////////////////////////////////
 
