@@ -8,20 +8,30 @@ import java.io.PrintStream;
 
 public class TestWorker {
  private Worker w = new Worker();
- 
- @Test
- @DisplayName("Work Method Test")
- public void testWorkMethod() {
 
-  ByteArrayOutputStream baos = new ByteArrayOutputStream();
-  PrintStream ps = new PrintStream(baos);
-  PrintStream old = System.out;
-  System.setOut(ps);
-  w.work();
-  System.out.flush();
-  System.setOut(old);
-  assertEquals(baos.toString(),"I likuh do da chacha\n");
+ @Test
+ @DisplayName("Eat Method Test")
+ public void newtestCWWorkerPass() {
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+	PrintStream ps = new PrintStream(baos);
+	PrintStream old = System.out;
+	System.setOut(ps);
+	w.eat();
+	System.out.flush();
+    System.setOut(old);
+    assertNotEquals(baos.toString(), "Yum yum!");
  }
 
- 
+ @Test
+ @DisplayName("Test Sick Method")
+ public void newTestCWWorkerFail() {
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+	PrintStream ps = new PrintStream(baos);
+	PrintStream old = System.out;
+	System.setOut(ps);
+	w.eat();
+	System.out.flush();
+    System.setOut(old);
+    assertEquals(baos.toString(), "I'm sick!!!");
+ }
 }
