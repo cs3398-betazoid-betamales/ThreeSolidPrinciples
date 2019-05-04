@@ -8,6 +8,7 @@ public class TestWorker {
  private Worker w = new Worker();
  private SuperWorker sw = new SuperWorker();
  private TempWorker tw = new TempWorker();
+ private BaseWorker bw = null;
  @Test
  @DisplayName("Work Method Test")
  public void testWorkMethod()
@@ -46,5 +47,23 @@ public class TestWorker {
  	assertNotSame(sw, tw);
  	
  	assertTrue(sw instanceof SuperWorker);
+ 	assertTrue(sw instanceof BaseWorker);
+ }
+  @Test
+ @DisplayName("newTestT_CWorkerFail")
+ public void newTestT_CWorkerFail()
+ {
+ 	assertTrue(bw instanceof Object);
+
+ 	asssertNotNull(bw);
+
+ 	bw = w;
+
+ 	assertNull(bw);
+
+ 	assertFalse(bw instanceof Object);
+
+ 	assertNotSame(bw, w);
+
  }
 }
