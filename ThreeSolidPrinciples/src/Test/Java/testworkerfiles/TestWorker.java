@@ -21,7 +21,7 @@ public class TestWorker {
  }
 
 @Test
-@DisplayName("Work Method Test")
+@DisplayName("Check For Difference")
 public void newtestrmmWorkerPass()
  {
 	ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -35,7 +35,7 @@ public void newtestrmmWorkerPass()
  }
 
 @Test
-@DisplayName("Work Method Test")
+@DisplayName("Check Work Exists")
 public void newtestrmmWorkerFail()
  {
 	ByteArrayOutputStream baos = new ByteArrayOutputStream();
