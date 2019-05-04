@@ -55,7 +55,7 @@ public class TestWorker {
  {
  	assertTrue(bw instanceof Object);
 
- 	asssertNotNull(bw);
+ 	assertNotNull(bw);
 
  	bw = w;
 
