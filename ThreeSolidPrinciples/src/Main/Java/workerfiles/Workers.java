@@ -44,7 +44,7 @@ package threesolid;
 
 class BaseWorker {
 	void work() {
-		System.out.format("I likuh do da chacha\n");
+		System.out.format("This is from the worker test.\n");
 	}
 }
 
